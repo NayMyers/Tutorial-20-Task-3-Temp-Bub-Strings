@@ -82,7 +82,7 @@ void BubbleSort<string>::sortValues(void)
 		swap = false;
 		for (int x = 0; x< int(values.size() - 1); x++)
 		{
-			if (values[x].compare(values[x+1]))
+			if (values[x].size() > values[x+1].size())
 			{
 				placeHolder = values[x];
 				values[x] = values[x + 1];
